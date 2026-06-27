@@ -1,0 +1,276 @@
+.profile-page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+}
+
+.profile-hero {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-2xl);
+  padding: var(--space-2xl);
+}
+
+.profile-avatar-section { flex-shrink: 0; }
+
+.profile-avatar-wrap {
+  position: relative;
+  width: 96px;
+  height: 96px;
+}
+
+.profile-avatar-img,
+.profile-avatar-initial {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: white;
+  background: var(--warm-orange);
+  object-fit: cover;
+  border: 3px solid var(--cream-darker);
+}
+
+.profile-avatar-edit {
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+  width: 28px;
+  height: 28px;
+  background: var(--warm-orange);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border: 2px solid white;
+  transition: background var(--transition-fast);
+}
+
+.profile-avatar-edit:hover { background: var(--warm-orange-dark); }
+
+.profile-info { flex: 1; }
+
+.profile-name-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  margin-bottom: var(--space-xs);
+}
+
+.profile-name-row h1 { margin-bottom: 0; }
+
+.profile-edit-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-sm);
+}
+
+.profile-name-input {
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 8px 12px;
+  max-width: 300px;
+}
+
+.profile-email {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-bottom: var(--space-lg);
+}
+
+.profile-stats-row {
+  display: flex;
+  gap: var(--space-xl);
+}
+
+.profile-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.profile-stat-icon {
+  font-size: 1.2rem;
+  color: var(--warm-orange);
+  margin-bottom: 2px;
+}
+
+.profile-stat strong {
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: var(--font-display);
+  color: var(--text-primary);
+}
+
+.profile-stat span {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+/* Grid */
+.profile-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-lg);
+}
+
+.profile-section {
+  padding: var(--space-xl);
+}
+
+.profile-section h2 {
+  font-size: 1.1rem;
+  margin-bottom: var(--space-lg);
+  padding-bottom: var(--space-sm);
+  border-bottom: 2px solid var(--cream-dark);
+}
+
+/* Badges */
+.badges-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-md);
+  margin-bottom: var(--space-lg);
+}
+
+.badge-card {
+  background: linear-gradient(135deg, var(--cream), var(--cream-dark));
+  border-radius: var(--radius-lg);
+  padding: var(--space-md);
+  text-align: center;
+  border: 1px solid var(--cream-darker);
+}
+
+.badge-card-icon { font-size: 2rem; margin-bottom: var(--space-xs); }
+.badge-card-name { font-weight: 700; font-size: 0.875rem; margin-bottom: 2px; }
+.badge-card-desc { font-size: 0.775rem; color: var(--text-muted); }
+
+.next-badge-progress {
+  background: var(--cream);
+  padding: var(--space-md);
+  border-radius: var(--radius-md);
+  margin-top: var(--space-md);
+}
+
+.next-badge-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.825rem;
+  color: var(--text-secondary);
+  margin-bottom: var(--space-sm);
+}
+
+.quests-progress-bar {
+  height: 8px;
+  background: var(--cream-darker);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.quests-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--warm-orange), var(--forest-green));
+  border-radius: var(--radius-full);
+  transition: width 0.8s ease;
+}
+
+/* Stories List */
+.profile-stories-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.profile-story-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-sm) var(--space-md);
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  transition: background var(--transition-fast);
+}
+
+.profile-story-item:hover { background: var(--cream); }
+
+.profile-story-info { flex: 1; min-width: 0; }
+
+.profile-story-title {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.profile-story-meta {
+  font-size: 0.775rem;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+.profile-story-thumb {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-sm);
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+/* Quest History */
+.quest-history-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.quest-history-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-sm) var(--space-md);
+  background: var(--cream);
+  border-radius: var(--radius-md);
+}
+
+.quest-history-icon { font-size: 1.3rem; flex-shrink: 0; }
+
+.quest-history-info { flex: 1; }
+
+.quest-history-title {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.quest-history-meta {
+  font-size: 0.775rem;
+  color: var(--text-muted);
+}
+
+.quest-history-points {
+  font-size: 0.825rem;
+  font-weight: 700;
+  color: var(--forest-green-dark);
+  background: rgba(90,138,106,0.1);
+  padding: 3px 10px;
+  border-radius: var(--radius-full);
+}
+
+@media (max-width: 768px) {
+  .profile-hero { flex-direction: column; align-items: center; text-align: center; }
+  .profile-stats-row { justify-content: center; }
+  .profile-grid { grid-template-columns: 1fr; }
+  .profile-section[style] { grid-column: span 1 !important; }
+}

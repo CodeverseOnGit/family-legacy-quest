@@ -1,0 +1,280 @@
+export const STORY_PROMPTS = [
+  // Childhood Memories
+  "Tell us about your very first memory as a child.",
+  "What was your favorite childhood toy, and why did you love it?",
+  "Describe your childhood home in detail — the smells, the sounds, the feeling.",
+  "Who was your best friend growing up and what adventures did you share?",
+  "What did you want to be when you grew up, and why?",
+  "Tell us about your favorite childhood game or sport.",
+  "What was the best gift you ever received as a child?",
+  "Describe a typical summer day from your childhood.",
+  "What was your most mischievous childhood moment?",
+  "Tell us about a favorite stuffed animal or comfort item from childhood.",
+  "What cartoons or TV shows did you love as a kid?",
+  "Describe your elementary school experience.",
+  "Who was a teacher who truly made a difference in your life?",
+  "Tell us about your neighborhood growing up.",
+  "What music did you listen to as a teenager?",
+
+  // Family Traditions
+  "What family tradition means the most to you and why?",
+  "Describe your favorite holiday celebration as a child.",
+  "What is a family recipe that has been passed down through generations?",
+  "Tell us about a family vacation you'll never forget.",
+  "What bedtime stories did your parents tell you?",
+  "Describe your family's holiday meal traditions.",
+  "What games did your family play together?",
+  "Tell us about a family reunion or gathering that stands out.",
+  "What songs did your family sing together?",
+  "Describe how your family celebrated birthdays when you were young.",
+
+  // Life Milestones
+  "Tell us about your first job and what you learned from it.",
+  "Describe the moment you knew you had found your calling.",
+  "Tell us about your first day of high school.",
+  "What was your proudest academic achievement?",
+  "Tell us about getting your driver's license.",
+  "Describe your high school graduation day.",
+  "Tell us about your first apartment or home.",
+  "What was your biggest career challenge and how did you overcome it?",
+  "Describe the day you got married (or a special relationship milestone).",
+  "Tell us about the birth of your first child (or a child in your life).",
+
+  // Wisdom and Advice
+  "What advice would you give your 16-year-old self?",
+  "What is the most important lesson life has taught you?",
+  "What does success truly mean to you?",
+  "What do you wish you had known at 25 that you know now?",
+  "What is your greatest regret and what did you learn from it?",
+  "What is the bravest thing you've ever done?",
+  "Tell us about a time you completely changed your mind about something.",
+  "What habits have made the biggest difference in your life?",
+  "What would you tell your children about money?",
+  "What values do you hope to pass down to future generations?",
+
+  // Relationships
+  "Tell us how you met your best friend.",
+  "Describe a time a stranger changed your life.",
+  "Tell us about the most important mentor in your life.",
+  "What did your parents teach you about love?",
+  "Describe your relationship with your siblings.",
+  "Tell us about a friendship that surprised you.",
+  "Who has been your biggest supporter throughout your life?",
+  "Describe a time you forgave someone and how it changed you.",
+  "Tell us about a relationship that taught you something unexpected.",
+  "Who do you call when things get hard, and why?",
+
+  // Food and Culture
+  "Tell us about a meal that felt like pure love.",
+  "What dish reminds you most of home?",
+  "Describe a food from your childhood you still crave.",
+  "Tell us about learning to cook a family recipe.",
+  "What is your ultimate comfort food and why?",
+  "Describe a memorable meal with family or friends.",
+  "Tell us about a food tradition you've kept alive.",
+  "What food do you associate with your grandparents?",
+  "Describe a kitchen memory from your childhood.",
+  "Tell us about a recipe you invented or perfected.",
+
+  // Places and Travel
+  "Tell us about a place that shaped who you are.",
+  "Describe the most beautiful place you've ever been.",
+  "Tell us about a trip that changed your perspective.",
+  "What place do you return to in your memories most often?",
+  "Describe a place that no longer exists but lives in your heart.",
+  "Tell us about a road trip adventure.",
+  "What does your hometown mean to you now?",
+  "Describe a place you've always wanted to visit.",
+  "Tell us about getting wonderfully lost somewhere.",
+  "What travel memory do you treasure most?",
+
+  // Work and Purpose
+  "Tell us about your dream job as a child versus your actual career.",
+  "Describe a work project you're most proud of.",
+  "Tell us about a colleague who became a true friend.",
+  "What has your work taught you about life?",
+  "Describe a moment of true mastery in your work.",
+  "Tell us about a failure at work that led to growth.",
+  "What do you wish more people knew about your profession?",
+  "Describe your first paycheck and what you did with it.",
+  "Tell us about taking a leap of faith in your career.",
+  "What legacy do you hope to leave through your work?",
+
+  // Challenges and Resilience
+  "Tell us about a time you surprised yourself with your own strength.",
+  "Describe the hardest decision you've ever made.",
+  "Tell us about a time everything went wrong but somehow worked out.",
+  "What has illness or hardship taught you about life?",
+  "Describe a moment when you had to start over.",
+  "Tell us about persisting through something that seemed impossible.",
+  "What does 'home' mean to you after difficult times?",
+  "Describe a time you asked for help when it was hard to do.",
+  "Tell us about carrying on a tradition after someone was gone.",
+  "What has loss taught you about what truly matters?",
+
+  // Joy and Play
+  "Tell us about something that makes you laugh every single time.",
+  "Describe your happiest day that wasn't a big event.",
+  "Tell us about a hobby that brings you pure joy.",
+  "What silly thing makes you enormously happy?",
+  "Describe a perfect ordinary day.",
+  "Tell us about a time you laughed until you cried.",
+  "What song always lifts your mood?",
+  "Describe a book that changed how you see the world.",
+  "Tell us about a movie that moved you deeply.",
+  "What simple pleasure do you treasure most?",
+
+  // Heritage and Roots
+  "Tell us about your family's origins and heritage.",
+  "Describe a tradition passed down from grandparents or great-grandparents.",
+  "What language, words, or phrases are special in your family?",
+  "Tell us about an ancestor who inspires you.",
+  "What do you know about your family's immigration story?",
+  "Describe a cultural practice your family maintains.",
+  "Tell us what you've learned from your elders.",
+  "What family story gets told at every gathering?",
+  "Describe an heirloom and the story behind it.",
+  "What aspects of your heritage are you most proud of?",
+
+  // Nature and Seasons
+  "Describe your favorite season and your earliest memory of it.",
+  "Tell us about an encounter with nature that stayed with you.",
+  "What is your favorite weather and what does it make you feel?",
+  "Describe a sunset or sunrise that took your breath away.",
+  "Tell us about your favorite outdoor place growing up.",
+  "What animal has had a special place in your life?",
+  "Describe a garden you've tended or loved.",
+  "Tell us about an outdoor adventure that pushed your limits.",
+  "What sounds of nature bring you peace?",
+  "Describe a storm that you remember vividly.",
+
+  // Dreams and Imagination
+  "Tell us about a dream or aspiration you're still chasing.",
+  "What did you imagine your future would look like at age 10?",
+  "Describe a moment when a dream actually came true.",
+  "Tell us about a creative project you've always wanted to pursue.",
+  "What book or story world did you get lost in as a child?",
+  "Describe an invention you wish existed.",
+  "Tell us about a dream (while sleeping) that felt important.",
+  "What would you do if you knew you couldn't fail?",
+  "Describe your ideal life 10 years from now.",
+  "Tell us about someone who helped you believe in your dreams.",
+
+  // Technology and Change
+  "Tell us about the first time you encountered a computer.",
+  "Describe how technology has changed your life in your lifetime.",
+  "What invention has made the biggest difference to your daily life?",
+  "Tell us about a time you had to adapt to major change.",
+  "What technology from your childhood seems magical now?",
+  "Describe how communication has changed in your lifetime.",
+  "Tell us about watching a historic moment unfold.",
+  "What change in the world are you most hopeful about?",
+  "Describe the world as it was when you were born.",
+  "Tell us what you hope technology will accomplish for future generations.",
+
+  // Gratitude and Love
+  "Tell us about someone who loved you unconditionally.",
+  "What are you most grateful for in your life right now?",
+  "Describe a small act of kindness that meant everything.",
+  "Tell us about a time you were shown unexpected generosity.",
+  "What does home mean to you?",
+  "Describe a moment when you felt completely at peace.",
+  "Tell us about someone you'd like to thank but haven't.",
+  "What beautiful things do you notice that others often miss?",
+  "Describe a time you made someone's day brighter.",
+  "Tell us what love has taught you.",
+
+  // Health and Wellbeing
+  "Tell us about a health challenge that changed your outlook.",
+  "Describe a physical achievement you're proud of.",
+  "What wellness practice has changed your life?",
+  "Tell us about learning to slow down.",
+  "Describe a moment you truly listened to your body.",
+  "What does rest and restoration look like for you?",
+  "Tell us about a time you prioritized yourself.",
+  "What mental health lesson would you share with younger generations?",
+  "Describe how you learned to manage stress.",
+  "Tell us about someone who cared for you when you were unwell.",
+
+  // Funny and Light-Hearted
+  "Tell us your most embarrassing story (that you can laugh about now).",
+  "Describe the most ridiculous thing you've ever done.",
+  "Tell us about a time things went hilariously wrong.",
+  "What is your all-time best joke or funny story?",
+  "Describe a family nickname and how it started.",
+  "Tell us about a prank you pulled or that was pulled on you.",
+  "What is the most unusual thing about your family?",
+  "Describe a fashion choice from your past that makes you cringe.",
+  "Tell us about your most awkward first impression on someone.",
+  "What quirky habit or superstition has always stuck with you?",
+
+  // Seasonal and Holiday
+  "Tell us about your favorite Christmas or holiday memory.",
+  "Describe how your family celebrated Thanksgiving or harvest time.",
+  "Tell us about a special New Year's tradition.",
+  "Describe your most memorable summer.",
+  "Tell us about a winter day that felt magical.",
+  "What does spring mean to your family?",
+  "Describe a Fourth of July or independence celebration.",
+  "Tell us about a harvest or fall tradition.",
+  "What made the holidays feel special in your home?",
+  "Describe a year-end tradition that gives you hope.",
+
+  // Animals and Pets
+  "Tell us about the pet that has meant the most to you.",
+  "Describe a funny or heartwarming animal story.",
+  "Tell us about encountering wildlife in an unexpected place.",
+  "What has an animal taught you about life?",
+  "Describe your childhood pet and its personality.",
+  "Tell us about losing a beloved pet.",
+  "What animal do you feel connected to, and why?",
+  "Describe a time an animal rescued you in some way.",
+  "Tell us about a pet that became an unexpected family member.",
+  "What would your pet say about you, if it could talk?",
+
+  // Arts and Creativity
+  "Tell us about a piece of art that moved you.",
+  "Describe a creative skill you've developed.",
+  "Tell us about a performance you'll never forget.",
+  "What music has been the soundtrack to your life?",
+  "Describe a time you created something you were proud of.",
+  "Tell us about a concert or live event you attended.",
+  "What is your most treasured book, and why?",
+  "Describe a film that shaped who you became.",
+  "Tell us about a painting, sculpture, or photo that speaks to you.",
+  "What creative pursuit have you always wanted to try?",
+
+  // Community and Service
+  "Tell us about a time you made a difference in your community.",
+  "Describe a volunteer experience that changed you.",
+  "Tell us about someone who dedicated their life to helping others.",
+  "What cause do you care most deeply about?",
+  "Describe a moment you stood up for something important.",
+  "Tell us about a community that welcomed you.",
+  "What does service to others mean in your family?",
+  "Describe a neighbor who made a lasting impression.",
+  "Tell us about a moment of unexpected community.",
+  "What would you like future generations to fight for?",
+
+  // Legacy and Meaning
+  "What do you hope people remember you for?",
+  "Describe the mark you most want to leave on the world.",
+  "Tell us what wisdom you most want to pass down.",
+  "What three words capture who you truly are?",
+  "Describe what a well-lived life looks like to you.",
+  "Tell us about a moment that encapsulates everything you stand for.",
+  "What do you want your grandchildren to know about you?",
+  "Describe the thread that connects all the chapters of your life.",
+  "Tell us what you believe about the meaning of family.",
+  "What is the story of your life, in one paragraph?",
+]
+
+export function getWeeklyPrompt() {
+  const weekNumber = Math.floor(Date.now() / (7 * 24 * 60 * 60 * 1000))
+  return STORY_PROMPTS[weekNumber % STORY_PROMPTS.length]
+}
+
+export function getRandomPrompts(count = 5) {
+  const shuffled = [...STORY_PROMPTS].sort(() => Math.random() - 0.5)
+  return shuffled.slice(0, count)
+}

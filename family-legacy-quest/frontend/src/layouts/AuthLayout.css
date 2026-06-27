@@ -1,0 +1,83 @@
+.auth-layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.auth-sidebar {
+  width: 420px;
+  flex-shrink: 0;
+  background: linear-gradient(160deg, var(--warm-orange) 0%, var(--warm-orange-dark) 60%, #A85430 100%);
+  color: var(--white);
+  padding: var(--space-3xl) var(--space-2xl);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2xl);
+}
+
+.auth-brand-icon {
+  font-size: 3rem;
+  margin-bottom: var(--space-md);
+}
+
+.auth-brand-name {
+  font-family: var(--font-display);
+  font-size: 1.9rem;
+  color: var(--white);
+  margin-bottom: var(--space-sm);
+}
+
+.auth-brand-tagline {
+  color: rgba(255,255,255,0.85);
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.auth-features {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.auth-feature {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  font-size: 1rem;
+  color: rgba(255,255,255,0.9);
+}
+
+.auth-feature span {
+  font-size: 1.3rem;
+  flex-shrink: 0;
+}
+
+.auth-quote {
+  margin-top: auto;
+  padding: var(--space-lg);
+  background: rgba(255,255,255,0.12);
+  border-radius: var(--radius-lg);
+  border-left: 3px solid rgba(255,255,255,0.5);
+}
+
+.auth-quote p {
+  font-family: var(--font-display);
+  font-style: italic;
+  color: rgba(255,255,255,0.9);
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.auth-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-xl);
+  background: var(--cream);
+}
+
+@media (max-width: 900px) {
+  .auth-sidebar {
+    display: none;
+  }
+}

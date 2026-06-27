@@ -1,0 +1,231 @@
+.timeline-page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+}
+
+.timeline-container {
+  position: relative;
+  padding: var(--space-xl) 0;
+}
+
+.timeline-line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(to bottom, var(--warm-orange-light), var(--soft-blue-light), var(--forest-green-light));
+  transform: translateX(-50%);
+  border-radius: 3px;
+}
+
+.timeline-year-group {
+  margin-bottom: var(--space-2xl);
+}
+
+.timeline-year-marker {
+  display: flex;
+  justify-content: center;
+  margin-bottom: var(--space-xl);
+  position: relative;
+  z-index: 2;
+}
+
+.timeline-year-marker span {
+  background: var(--warm-orange);
+  color: white;
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 700;
+  padding: 8px 28px;
+  border-radius: var(--radius-full);
+  box-shadow: var(--shadow-md);
+}
+
+.timeline-month-group {
+  margin-bottom: var(--space-xl);
+}
+
+.timeline-month-label {
+  text-align: center;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: var(--space-lg);
+  position: relative;
+  z-index: 2;
+}
+
+.timeline-entry {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: var(--space-xl);
+  position: relative;
+}
+
+.timeline-entry.left {
+  flex-direction: row;
+  padding-right: calc(50% + 40px);
+}
+
+.timeline-entry.right {
+  flex-direction: row-reverse;
+  padding-left: calc(50% + 40px);
+}
+
+.timeline-dot {
+  position: absolute;
+  left: 50%;
+  top: 24px;
+  transform: translateX(-50%);
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--warm-orange);
+  border: 3px solid var(--white);
+  box-shadow: 0 0 0 3px var(--warm-orange-light);
+  z-index: 2;
+  flex-shrink: 0;
+}
+
+.timeline-card {
+  display: block;
+  text-decoration: none;
+  overflow: hidden;
+  transition: all var(--transition-base);
+  width: 100%;
+}
+
+.timeline-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lg);
+}
+
+.timeline-card-image {
+  height: 140px;
+  overflow: hidden;
+}
+
+.timeline-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-slow);
+}
+
+.timeline-card:hover .timeline-card-image img {
+  transform: scale(1.04);
+}
+
+.timeline-card-body {
+  padding: var(--space-md) var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.timeline-card-date {
+  font-size: 0.775rem;
+  color: var(--warm-orange);
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.timeline-card-title {
+  font-size: 1rem;
+  color: var(--text-primary);
+  line-height: 1.4;
+}
+
+.timeline-card-excerpt {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.timeline-card-author {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-top: 4px;
+}
+
+.timeline-author-avatar {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--soft-blue);
+  color: white;
+  font-size: 0.65rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.timeline-author-avatar img { width: 100%; height: 100%; object-fit: cover; }
+
+.timeline-card-author span {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.timeline-reactions {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.timeline-reactions span {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.timeline-loading {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+}
+
+.timeline-skeleton {
+  height: 180px;
+  border-radius: var(--radius-lg);
+}
+
+@media (max-width: 768px) {
+  .timeline-line {
+    left: 20px;
+  }
+
+  .timeline-entry.left,
+  .timeline-entry.right {
+    flex-direction: row;
+    padding-left: 50px;
+    padding-right: 0;
+  }
+
+  .timeline-dot {
+    left: 20px;
+    top: 20px;
+  }
+
+  .timeline-year-marker {
+    justify-content: flex-start;
+    padding-left: 50px;
+  }
+
+  .timeline-month-label {
+    text-align: left;
+    padding-left: 50px;
+  }
+}
